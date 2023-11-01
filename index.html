@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <style>
+        button{
+            margin: 10px;
+            padding: 10px 20px;
+        }
+
+        input{
+            margin: 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app">
+        <input v-model="x" type="number"><input v-model.number="y" type="number">
+        <br>
+        <button @click="tambah()">+</button>
+        <button @click="kurang()">-</button>
+        <button @click="kali()">x</button>
+        <button @click="bagi()">/</button>
+        <div>Hasil: {{ hasil }}</div>
+    </div>
+    
+</body>
+<script src="./app.js"></script>
+</html>
